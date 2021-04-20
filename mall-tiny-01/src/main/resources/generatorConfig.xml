@@ -20,7 +20,7 @@
             <property name="addRemarkComments" value="true"/>
         </commentGenerator>
         <!--配置数据库连接-->
-        <jdbcConnection driverClass="${jdbc.driverClass}}"
+        <jdbcConnection driverClass="${jdbc.driverClass}"
                         connectionURL="${jdbc.connectionURL}"
                         userId="${jdbc.userId}"
                         password="${jdbc.password}">
@@ -28,12 +28,12 @@
             <property name="nullCatalogMeansCurrent" value="true" />
         </jdbcConnection>
         <!--指定生成model路径-->
-        <javaModelGenerator targetPackage="com.mall.demo.mbg.model" targetProject="mall-tiny-01\src\main\java"/>
+        <javaModelGenerator targetPackage="com.mall.demo.mbg.model" targetProject="src/main/java"/>
         <!--指定生成mapper路径-->
-        <sqlMapGenerator targetPackage="com.mall.demo.mbg.mapper" targetProject="mall-tiny-01\src\main\resources"/>
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.mall.demo.mbg.mapper" targetProject="mall-tiny-01\src\main\java"/>
+        <sqlMapGenerator targetPackage="com.mall.demo.mbg.mapper" targetProject="src/main/resources"/>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.mall.demo.mbg.mapper" targetProject="src/main/java"/>
         <table tableName="pms_brand">
-            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
     </context>
 </generatorConfiguration>
