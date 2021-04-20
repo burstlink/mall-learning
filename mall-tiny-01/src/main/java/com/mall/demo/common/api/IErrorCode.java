@@ -1,4 +1,11 @@
 package com.mall.demo.common.api;
 
-public class IErrorCode {
+/**
+ * 封装API的错误
+ */
+public interface IErrorCode {
+
+    long getCode();
+
+    String getMessage();
 }
