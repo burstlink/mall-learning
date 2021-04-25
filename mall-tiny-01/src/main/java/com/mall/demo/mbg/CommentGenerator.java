@@ -3,7 +3,6 @@ package com.mall.demo.mbg;
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;
 import org.mybatis.generator.api.dom.java.Field;
-import org.mybatis.generator.api.dom.kotlin.KotlinFile;
 import org.mybatis.generator.internal.DefaultCommentGenerator;
 import org.mybatis.generator.internal.util.StringUtility;
 
