@@ -38,6 +38,12 @@
             <scope>test</scope>
         </dependency>
 
+        <!--redis配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <!--MyBatis分页插件-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
