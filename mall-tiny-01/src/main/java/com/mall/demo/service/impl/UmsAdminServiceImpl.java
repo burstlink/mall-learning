@@ -5,7 +5,6 @@ import com.mall.demo.dao.UmsAdminRoleRelationDao;
 import com.mall.demo.mbg.mapper.UmsAdminMapper;
 import com.mall.demo.mbg.model.UmsAdmin;
 import com.mall.demo.mbg.model.UmsAdminExample;
-import com.mall.demo.mbg.model.UmsAdminRoleRelation;
 import com.mall.demo.mbg.model.UmsPermission;
 import com.mall.demo.service.UmsAdminService;
 import org.slf4j.Logger;
@@ -20,13 +19,15 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
 
+@Service
 public class UmsAdminServiceImpl implements UmsAdminService {
 
-    public static final Logger LOGGER = LoggerFactory.getLogger(UmsAdminServiceImpl.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(UmsAdminServiceImpl.class);
 
     @Autowired
     private UserDetailsService userDetailsService;
