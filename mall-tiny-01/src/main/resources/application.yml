@@ -16,6 +16,12 @@ spring:
         max-idle: 8
         min-idle: 0
     timeout: 3000ms
+  data:
+    elasticsearch:
+      repositories:
+        enable: true
+      cluster-nodes: 127.0.0.1:9300
+      cluster-name: elasticsearch
 mybatis:
   mapper-locations:
     - classpath:mapper/*.xml
