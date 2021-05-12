@@ -24,6 +24,13 @@ spring:
       cluster-name: elasticsearch
     mongodb:
       uri: mongodb://193.160.56.160:27017/mall-port
+  rabbitmq:
+    host: 193.160.56.160
+    port: 5672
+    virtual-host: /mall
+    username: mall
+    password: mall
+    publisher-confirms: true
 mybatis:
   mapper-locations:
     - classpath:mapper/*.xml
